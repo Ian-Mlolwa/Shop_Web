@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ShoppingWeb</title>
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="Style.css" media="screen" />
+</head>
+
+
+<body>
+	<div class="header">
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="images\Shoppingweb.jpg" width="100px" height="70"></a>
+	</div>
+
+<!--head links-->
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="index.html">Home</a></li>
+			<li class="cart">
+				<a href="cart.html">
+					<ion-icon name="cart"></ion-icon>Cart<span>0</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+	
+
+<!--Products-->
+		<div class="small-container">
+			<h2>Products</h2>
+			<div class="row">
+				<div class="col-4">
+				<img src="images/Plain T-shirts.jpg" height="250px"></a>
+				<h4>Plain T-shirts</h4>
+				<p>Ksh: 2000</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+			<div class="col-4">
+				<img src="images/T-shirt.jpg" height="250px">
+				<h4>T-shirt</h4>
+				<p>Ksh: 400</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+			<div class="col-4">
+				<img src="images/Ladies Whear.jpg" height="250px">
+				<h4>Ladies Whear</h4>
+				<p>Ksh: 300</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+			<div class="col-4">
+				<img src="images/Sweter.jpg" height="250px">
+				<h4>Sweter</h4>
+				<p>Ksh: 500</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+			<div class="col-4">
+				<img src="images/Lether Jacket.jpg" height="250px">
+				<h4>Lether Jacket</h4>
+				<p>Ksh: 800</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+			<div class="col-4">
+				<img src="images/Ladies Dress.jpg" height="250px">
+				<h4>Ladies Dress</h4>
+				<p>Ksh: 700</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+			<div class="col-4">
+				<img src="images/Sport Shoes.jpg" height="250px">
+				<h4>Sport Shoes</h4>
+				<p>Ksh: 900</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+			<div class="col-4">
+				<img src="images/Convers.jpg" height="250px">
+				<h4>Convers</h4>
+				<p>Ksh: 550</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+			<div class="col-4">
+				<img src="images/Lether Shoes.jpg" height="250px">
+				<h4>Lether Shoes</h4>
+				<p>Ksh: 1200</p>
+				<a class="btn to-cart" href="#">Add Cart</a>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<!--js for toggle mune-->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+<!--js for toggle form-->
+<script>
+
+	var Loginform = document.getElementById("Loginform");
+	var Regform = document.getElementById("Regform");
+	var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            Regform.style.transform = "translateX(0px)";
+            Loginform.style.transform = "translateX(0px)";
+        }
+        
+        function login(){
+            Regform.style.transform = "translateX(300px)";
+            Loginform.style.transform = "translateX(300px)";
+        }
+
+
+
+</script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html> 

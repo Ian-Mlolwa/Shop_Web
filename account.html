@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products-ShoppingWeb</title>
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="Style.css" media="screen" />
+</head>
+
+
+<body>
+	<div class="header">
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<a href="index.html" ><img src="images\Shoppingweb.jpg" width="100px" height="70"></a>
+	</div>
+
+<!--head links-->
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="index.html">Home</a></li>
+			<li class="cart">
+				<a href="cart.html">
+					<ion-icon name="basket"></ion-icon>Cart<span>0</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+<!---------account page------->
+<div class="account-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<div class="form-container">
+					<div class="form-btn">
+						<span onclick="login()">Login</span>
+						<span onclick="register()">Register</span>
+						<hr id="Indicator">
+					</div>
+					
+					<form id="LoginForm">
+					    <input type="text" placeholder="Username">
+					    <input type="password" placeholder="Password">
+						<a href="index.html"><button type="submit" class="btn">Login</button><br/></a>
+					    <a href="">Forgot password</a>
+			        </form>
+
+				    <form id="RegForm">
+					    <input type="text" placeholder="Username">
+					    <input type="email" placeholder="Email">
+					    <input type="password" placeholder="Password">
+					    <a href="index.html"><button type="submit" class="btn">Register</button></a>
+				    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="main.js"></script>
+<!--js for toggle mune-->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+<!--js for toggle form-->
+<script>
+
+	var LoginForm = document.getElementById("LoginForm");
+	var RegForm = document.getElementById("RegForm");
+	var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+			Indicator.style.transform = "translateX(100px)";
+        }
+        
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+			Indicator.style.transform = "translateX(0px)";
+        }
+
+</script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>

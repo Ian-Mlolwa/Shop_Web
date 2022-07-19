@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ShopWeb</title>
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="Style.css" media="screen" />
+</head>
+
+
+<body>
+	<div class="header">
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<a href="index.html" ><img src="images\Shoppingweb.jpg" width="100px" height="70"></a>
+	</div>
+
+<!--head links-->
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="account.html">Account</a></li>
+			<li class="cart">
+				<a href="cart.html">
+					<ion-icon name="basket"></ion-icon>Cart<span>0</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<h1>ShopWeb World Wide</h1>
+			<p>Experience a whole new world in shopping with ShoppingWeb.</p>
+			<a href="" class="btn">More Items</a>
+		</div>
+		<div class="col-2">
+			<img src="images/download (3).jpg" width="300px" height="300px">
+		</div>
+<!---Categories-->
+		<div class="categories">
+			<h2>Featured Products</h2>
+			<div class="small-container">
+				<div class="row">
+					<div class="col-3">
+						<img src="images/images (14).jpg">
+					</div>
+					<div class="col-3">
+						<img src="images/download.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+<!--Products-->
+<div>
+	<h1 class="about">
+		<hr/><p class="deatails">
+			MADE BY:<hr/> IAN MLOLWA MWAMBURI - (B141/18029/2019)</br>
+			&</br>
+			ELIAS KOGI - (B141/18030/2019)
+		</p>
+	</h2>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<!--js for toggle mune-->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+<!--js for toggle form-->
+<script>
+
+	var Loginform = document.getElementById("Loginform");
+	var Regform = document.getElementById("Regform");
+	var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            Regform.style.transform = "translateX(0px)";
+            Loginform.style.transform = "translateX(0px)";
+        }
+        
+        function login(){
+            Regform.style.transform = "translateX(300px)";
+            Loginform.style.transform = "translateX(300px)";
+        }
+
+
+
+</script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html> 
